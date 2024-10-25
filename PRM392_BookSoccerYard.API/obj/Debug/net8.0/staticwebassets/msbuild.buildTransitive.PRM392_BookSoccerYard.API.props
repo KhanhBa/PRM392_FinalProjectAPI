@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\PRM392_BookSoccerYard.API.props" />
+</Project>
