@@ -93,6 +93,9 @@ public partial class PRM392_BookSoccerYardContext : DbContext
             entity.Property(e => e.CreateDate)
                 .HasColumnType("date")
                 .HasColumnName("create_date");
+            entity.Property(e => e.BookingDate)
+                .HasColumnType("datetime")
+                .HasColumnName("bookingDate");
             entity.Property(e => e.CustomerId).HasColumnName("customer_id");
             entity.Property(e => e.Duration).HasColumnName("duration");
             entity.Property(e => e.EndTime)
