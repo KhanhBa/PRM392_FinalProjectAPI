@@ -96,12 +96,10 @@ public partial class PRM392_BookSoccerYardContext : DbContext
             entity.Property(e => e.CustomerId).HasColumnName("customer_id");
             entity.Property(e => e.Duration).HasColumnName("duration");
             entity.Property(e => e.EndTime)
-                .HasColumnType("datetime")
                 .HasColumnName("end_time");
             entity.Property(e => e.PaymentId).HasColumnName("payment_id");
             entity.Property(e => e.SlotId).HasColumnName("slot_id");
             entity.Property(e => e.StartTime)
-                .HasColumnType("datetime")
                 .HasColumnName("start_time");
             entity.Property(e => e.Status)
                 .HasMaxLength(50)

@@ -78,13 +78,12 @@ namespace PRM392_BookSoccerYard.API.Controllers
             return Ok("successfully");
         }
 
-        // POST: api/Customers
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<CustomerDTO>> PostCustomer(SignUp customerDTO)
         {
             var customer = _mapper.Map<Customer>(customerDTO);
             customer.CreateDate = DateTime.Now;
+            customer.UpdateDate= DateTime.Now;
             customer.FirstName = "FirstName";
             customer.Img = "https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/VKPAOODQC52FBBEG6VUDMVRT6Y.jpg";
             customer.LastName = "LastName";
