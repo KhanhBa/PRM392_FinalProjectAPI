@@ -521,3 +521,4 @@ D:\Semester 8\PRM\PRM392_FinalProjectAPI\PRM392_BookSoccerYard.API\obj\Debug\net
 D:\Semester 8\PRM\PRM392_FinalProjectAPI\PRM392_BookSoccerYard.API\obj\Debug\net8.0\PRM392_BookSoccerYard.API.pdb
 D:\Semester 8\PRM\PRM392_FinalProjectAPI\PRM392_BookSoccerYard.API\obj\Debug\net8.0\PRM392_BookSoccerYard.API.genruntimeconfig.cache
 D:\Semester 8\PRM\PRM392_FinalProjectAPI\PRM392_BookSoccerYard.API\obj\Debug\net8.0\ref\PRM392_BookSoccerYard.API.dll
+C:\Users\Admin\OneDrive\Máy tính\PRM392_BookSoccerYard.API\PRM392_BookSoccerYard.API\obj\Debug\net8.0\PRM392_BookSoccerYard.API.sourcelink.json

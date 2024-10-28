@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using PRM392_BookSoccerYard.API.DTO.Customer;
+using PRM392_BookSoccerYard.API.DTO.Order;
 using PRM392_BookSoccerYard.API.DTO.Slot;
 using PRM392_BookSoccerYard.API.DTO.Yard;
 using PRM392_BookSoccerYard.API.Models;
@@ -19,6 +20,13 @@ namespace PRM392_BookSoccerYard.API
 
             CreateMap<Slot, SlotDTO>().ReverseMap();
             CreateMap<Slot,CreatedSlot>().ReverseMap();
+
+            CreateMap<Order, OrderDTO>().ReverseMap();
+            CreateMap<CreatedOrder, Order>().ReverseMap()
+                .ForMember(x => x.orderDetails, otp => otp.MapFrom(x => x.OrderDetails));
+            CreateMap<OrderDetail,CreatedOrderDetail>().ReverseMap();
+            CreateMap<Payment,CreatedPayment>().ReverseMap();
+
         }
     }
 }

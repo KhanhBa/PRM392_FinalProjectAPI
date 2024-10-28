@@ -17,8 +17,6 @@ public partial class Order
 
     public DateTime? UpdateDate { get; set; }
 
-    public int? PaymentId { get; set; }
-
     public int? YardId { get; set; }
 
     public int? CustomerId { get; set; }
@@ -45,4 +43,12 @@ public partial class Order
     public virtual Slot Slot { get; set; }
 
     public virtual Yard Yard { get; set; }
+}
+public enum StatusOrder
+{
+    DaCoc,          // Đã cọc
+    DaThanhToan,   // Đã thanh toán
+    DaHuy,         // Đã Hủy
+    DaHoanThanh,   // Đã hoàn thành
+    Fail
 }

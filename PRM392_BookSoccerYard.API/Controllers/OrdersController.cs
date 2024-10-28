@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using PRM392_BookSoccerYard.API.DTO.Order;
 using PRM392_BookSoccerYard.API.Models;
 
 namespace PRM392_BookSoccerYard.API.Controllers
@@ -14,17 +16,19 @@ namespace PRM392_BookSoccerYard.API.Controllers
     public class OrdersController : ControllerBase
     {
         private readonly PRM392_BookSoccerYardContext _context;
-
-        public OrdersController(PRM392_BookSoccerYardContext context)
+        private readonly IMapper _mapper;
+        public OrdersController(PRM392_BookSoccerYardContext context,IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
 
         // GET: api/Orders
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Order>>> GetOrders()
+        public async Task<ActionResult<IEnumerable<OrderDTO>>> GetOrders()
         {
-            return await _context.Orders.ToListAsync();
+            var result = await _context.Orders.ToListAsync();
+            return _mapper.Map<List<OrderDTO>>(result);
         }
 
         // GET: api/Orders/5
@@ -75,8 +79,35 @@ namespace PRM392_BookSoccerYard.API.Controllers
         // POST: api/Orders
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Order>> PostOrder(Order order)
+        public async Task<ActionResult<OrderDTO>> PostOrder(CreatedOrder orderDTO)
         {
+            var payment = _mapper.Map<Payment>(orderDTO.payment);
+            var order = _mapper.Map<Order>(orderDTO);
+            var slot = await _context.Slots.Where(x=>x.Id== order.SlotId).FirstOrDefaultAsync();
+            if (slot == null)
+            {
+                throw new Exception("Not found Slots");
+            }
+            else
+            {
+                order.StartTime = slot.StartTime;
+                order.EndTime = slot.EndTime;
+            }
+            order.CreateDate = DateTime.Now;
+            if (payment.Status == "Coc")
+            {
+                order.Status = StatusOrder.DaCoc.ToString();
+            }
+            else
+            if (payment.Status == "Tong")
+            {
+                order.Status = StatusOrder.DaThanhToan.ToString();
+            }
+            else
+            {
+                order.Status = StatusOrder.Fail.ToString();
+            }
+            order.Payments.Add(payment);
             _context.Orders.Add(order);
             try
             {
@@ -94,7 +125,7 @@ namespace PRM392_BookSoccerYard.API.Controllers
                 }
             }
 
-            return CreatedAtAction("GetOrder", new { id = order.Id }, order);
+            return CreatedAtAction("GetOrder", new { id = order.Id }, _mapper.Map<OrderDTO>(order));
         }
 
         // DELETE: api/Orders/5

@@ -35,7 +35,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "PRM392_BookSoccerYard.API.Models.Customer",
+        "Type": "PRM392_BookSoccerYard.API.DTO.Customer.CustomerDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -227,7 +227,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[PRM392_BookSoccerYard.API.Models.Order, PRM392_BookSoccerYard.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[PRM392_BookSoccerYard.API.DTO.Order.OrderDTO, PRM392_BookSoccerYard.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -246,14 +246,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "order",
-        "Type": "PRM392_BookSoccerYard.API.Models.Order",
+        "Name": "orderDTO",
+        "Type": "PRM392_BookSoccerYard.API.DTO.Order.CreatedOrder",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "PRM392_BookSoccerYard.API.Models.Order",
+        "Type": "PRM392_BookSoccerYard.API.DTO.Order.OrderDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -798,7 +798,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "PRM392_BookSoccerYard.API.Models.Yard",
+        "Type": "PRM392_BookSoccerYard.API.DTO.Yard.YardDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",
