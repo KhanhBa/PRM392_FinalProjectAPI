@@ -150,8 +150,8 @@ namespace PRM392_BookSoccerYard.API.Controllers
                         OrderId = order.Id,
                         CustomerId = order.CustomerId.HasValue ? order.CustomerId.Value : -1,
                         CustomerName = order.Customer == null ? "guest" : order.Customer.Email,
-                        StartTime = order.Slot.StartTime,
-                        EndTime = order.Slot.EndTime,
+                        StartTime = order.StartTime.Value,
+                        EndTime = order.EndTime.Value,
                         Status = "Đã được đặt"
 
                     });
