@@ -7,7 +7,7 @@
         public int? Duration { get; set; }
         public string Status { get; set; }
         public int SlotId { get; set; }
-        public int? TotalPrice { get; set; }
+        public double? TotalPrice { get; set; }
         public DateTime? BookingDate { get; set; }
         public CreatedPayment payment { get; set; }
         public List<CreatedOrderDetail> orderDetails { get; set; }

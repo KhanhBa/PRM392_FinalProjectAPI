@@ -155,7 +155,6 @@ namespace PRM392_BookSoccerYard.API.Controllers
                 .Select(x => new DashboardDTO
                 {
                     Day = x.Key.Date,
-                    Quantity = x.Sum(x => x.TotalPrice.Value)
                 })
                 .ToListAsync();
             return Ok(list);

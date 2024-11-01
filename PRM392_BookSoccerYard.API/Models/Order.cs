@@ -31,7 +31,7 @@ public partial class Order
 
     public int SlotId { get; set; }
 
-    public int? TotalPrice { get; set; }
+    public double? TotalPrice { get; set; }
     public DateTime? BookingDate { get; set; }
 
     public virtual Customer Customer { get; set; }
