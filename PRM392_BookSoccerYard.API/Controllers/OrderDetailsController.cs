@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using PRM392_BookSoccerYard.API.DTO.Order;
 using PRM392_BookSoccerYard.API.Models;
 
 namespace PRM392_BookSoccerYard.API.Controllers
@@ -14,31 +16,45 @@ namespace PRM392_BookSoccerYard.API.Controllers
     public class OrderDetailsController : ControllerBase
     {
         private readonly PRM392_BookSoccerYardContext _context;
-
-        public OrderDetailsController(PRM392_BookSoccerYardContext context)
+        private IMapper _mapper;
+        public OrderDetailsController(PRM392_BookSoccerYardContext context,IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
 
         // GET: api/OrderDetails
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<OrderDetail>>> GetOrderDetails()
+        public async Task<ActionResult<IEnumerable<OrderDetailDTO>>> GetOrderDetails()
         {
-            return await _context.OrderDetails.ToListAsync();
+            var list = await _context.OrderDetails.Include(x=>x.Service).ToListAsync();
+            var result = _mapper.Map<List<OrderDetailDTO>>(list);
+            return result;
+                
+               
+        }
+        [HttpGet("orders/{id}")]
+        public async Task<ActionResult<IEnumerable<OrderDetailDTO>>> GetOrderDetailsByOrderId([FromRoute]int id)
+        {
+            var list = await _context.OrderDetails.Include(x => x.Service).Where(x=>x.OrderId==id).ToListAsync();
+            var result = _mapper.Map<List<OrderDetailDTO>>(list);
+            return result;
+
+
         }
 
         // GET: api/OrderDetails/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<OrderDetail>> GetOrderDetail(int id)
+        public async Task<ActionResult<OrderDetailDTO>> GetOrderDetail(int id)
         {
-            var orderDetail = await _context.OrderDetails.FindAsync(id);
+            var orderDetail = await _context.OrderDetails.Include(x => x.Service).Where(x=>x.Id==id).FirstOrDefaultAsync();
 
             if (orderDetail == null)
             {
                 return NotFound();
             }
 
-            return orderDetail;
+            return _mapper.Map<OrderDetailDTO>(orderDetail);
         }
 
         // PUT: api/OrderDetails/5

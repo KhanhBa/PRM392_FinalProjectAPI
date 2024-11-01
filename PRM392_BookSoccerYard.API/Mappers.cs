@@ -30,7 +30,9 @@ namespace PRM392_BookSoccerYard.API
 
             CreateMap<Service,ServiceDTO>().ReverseMap();
             CreateMap<Service,CreatedService>().ReverseMap();
-
+            CreateMap<OrderDetail,OrderDetailDTO>()
+                .ForPath(x=>x.ServiceName,otp=>otp.MapFrom(x=>x.Service.Name))
+                .ReverseMap();
         }
     }
 }

@@ -118,7 +118,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[PRM392_BookSoccerYard.API.Models.OrderDetail, PRM392_BookSoccerYard.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[PRM392_BookSoccerYard.API.DTO.Order.OrderDetailDTO, PRM392_BookSoccerYard.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -170,7 +170,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "PRM392_BookSoccerYard.API.Models.OrderDetail",
+        "Type": "PRM392_BookSoccerYard.API.DTO.Order.OrderDetailDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -216,6 +216,32 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PRM392_BookSoccerYard.API.Controllers.OrderDetailsController",
+    "Method": "GetOrderDetailsByOrderId",
+    "RelativePath": "api/OrderDetails/orders/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[PRM392_BookSoccerYard.API.DTO.Order.OrderDetailDTO, PRM392_BookSoccerYard.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "PRM392_BookSoccerYard.API.Controllers.OrdersController",
