@@ -870,5 +870,26 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PRM392_BookSoccerYard.API.Controllers.YardsController",
+    "Method": "GetCalendarbyYardId",
+    "RelativePath": "api/Yards/{id}/Days/{day}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "day",
+        "Type": "System.DateOnly",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

@@ -3,12 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\OneDrive\\M\u00E1y t\u00EDnh\\PRM392_BookSoccerYard.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CCAAA0DE-A697-409F-8D5D-EFFEEFB50384}|PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\prm392_booksocceryard.api\\prm392_booksocceryard.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCAAA0DE-A697-409F-8D5D-EFFEEFB50384}|PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API.csproj|solutionrelative:prm392_booksocceryard.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CCAAA0DE-A697-409F-8D5D-EFFEEFB50384}|PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\prm392_booksocceryard.api\\prm392_booksocceryard.api\\dto\\customer\\updatedcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCAAA0DE-A697-409F-8D5D-EFFEEFB50384}|PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API.csproj|solutionrelative:prm392_booksocceryard.api\\dto\\customer\\updatedcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCAAA0DE-A697-409F-8D5D-EFFEEFB50384}|PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\prm392_booksocceryard.api\\prm392_booksocceryard.api\\controllers\\yardscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCAAA0DE-A697-409F-8D5D-EFFEEFB50384}|PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API.csproj|solutionrelative:prm392_booksocceryard.api\\controllers\\yardscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCAAA0DE-A697-409F-8D5D-EFFEEFB50384}|PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\prm392_booksocceryard.api\\prm392_booksocceryard.api\\dto\\order\\calendardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCAAA0DE-A697-409F-8D5D-EFFEEFB50384}|PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API.csproj|solutionrelative:prm392_booksocceryard.api\\dto\\order\\calendardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCAAA0DE-A697-409F-8D5D-EFFEEFB50384}|PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\prm392_booksocceryard.api\\prm392_booksocceryard.api\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CCAAA0DE-A697-409F-8D5D-EFFEEFB50384}|PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API.csproj|solutionrelative:prm392_booksocceryard.api\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCAAA0DE-A697-409F-8D5D-EFFEEFB50384}|PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\prm392_booksocceryard.api\\prm392_booksocceryard.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCAAA0DE-A697-409F-8D5D-EFFEEFB50384}|PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API.csproj|solutionrelative:prm392_booksocceryard.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCAAA0DE-A697-409F-8D5D-EFFEEFB50384}|PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\prm392_booksocceryard.api\\prm392_booksocceryard.api\\dto\\order\\createdorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCAAA0DE-A697-409F-8D5D-EFFEEFB50384}|PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API.csproj|solutionrelative:prm392_booksocceryard.api\\dto\\order\\createdorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCAAA0DE-A697-409F-8D5D-EFFEEFB50384}|PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\prm392_booksocceryard.api\\prm392_booksocceryard.api\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCAAA0DE-A697-409F-8D5D-EFFEEFB50384}|PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API.csproj|solutionrelative:prm392_booksocceryard.api\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCAAA0DE-A697-409F-8D5D-EFFEEFB50384}|PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\prm392_booksocceryard.api\\prm392_booksocceryard.api\\dto\\customer\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCAAA0DE-A697-409F-8D5D-EFFEEFB50384}|PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API.csproj|solutionrelative:prm392_booksocceryard.api\\dto\\customer\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCAAA0DE-A697-409F-8D5D-EFFEEFB50384}|PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\prm392_booksocceryard.api\\prm392_booksocceryard.api\\dto\\slot\\slotdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCAAA0DE-A697-409F-8D5D-EFFEEFB50384}|PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API.csproj|solutionrelative:prm392_booksocceryard.api\\dto\\slot\\slotdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCAAA0DE-A697-409F-8D5D-EFFEEFB50384}|PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\prm392_booksocceryard.api\\prm392_booksocceryard.api\\models\\prm392_booksocceryardcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,20 +47,8 @@
       "RelativeMoniker": "D:0:0:{CCAAA0DE-A697-409F-8D5D-EFFEEFB50384}|PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API.csproj|solutionrelative:prm392_booksocceryard.api\\dto\\order\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CCAAA0DE-A697-409F-8D5D-EFFEEFB50384}|PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\prm392_booksocceryard.api\\prm392_booksocceryard.api\\dto\\order\\createdorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCAAA0DE-A697-409F-8D5D-EFFEEFB50384}|PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API.csproj|solutionrelative:prm392_booksocceryard.api\\dto\\order\\createdorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CCAAA0DE-A697-409F-8D5D-EFFEEFB50384}|PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\prm392_booksocceryard.api\\prm392_booksocceryard.api\\dto\\customer\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCAAA0DE-A697-409F-8D5D-EFFEEFB50384}|PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API.csproj|solutionrelative:prm392_booksocceryard.api\\dto\\customer\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CCAAA0DE-A697-409F-8D5D-EFFEEFB50384}|PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\prm392_booksocceryard.api\\prm392_booksocceryard.api\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CCAAA0DE-A697-409F-8D5D-EFFEEFB50384}|PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API.csproj|solutionrelative:prm392_booksocceryard.api\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CCAAA0DE-A697-409F-8D5D-EFFEEFB50384}|PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\prm392_booksocceryard.api\\prm392_booksocceryard.api\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCAAA0DE-A697-409F-8D5D-EFFEEFB50384}|PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API.csproj|solutionrelative:prm392_booksocceryard.api\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCAAA0DE-A697-409F-8D5D-EFFEEFB50384}|PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\prm392_booksocceryard.api\\prm392_booksocceryard.api\\models\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,11 +82,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 94,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
+              "Title": "UpdatedCustomer.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\M\u00E1y t\u00EDnh\\PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API\\DTO\\Customer\\UpdatedCustomer.cs",
+              "RelativeDocumentMoniker": "PRM392_BookSoccerYard.API\\DTO\\Customer\\UpdatedCustomer.cs",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\M\u00E1y t\u00EDnh\\PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API\\DTO\\Customer\\UpdatedCustomer.cs",
+              "RelativeToolTip": "PRM392_BookSoccerYard.API\\DTO\\Customer\\UpdatedCustomer.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAA3wBEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T04:12:04.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "YardsController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\M\u00E1y t\u00EDnh\\PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API\\Controllers\\YardsController.cs",
+              "RelativeDocumentMoniker": "PRM392_BookSoccerYard.API\\Controllers\\YardsController.cs",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\M\u00E1y t\u00EDnh\\PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API\\Controllers\\YardsController.cs",
+              "RelativeToolTip": "PRM392_BookSoccerYard.API\\Controllers\\YardsController.cs",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAAwKYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T03:22:31.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SlotDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\M\u00E1y t\u00EDnh\\PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API\\DTO\\Slot\\SlotDTO.cs",
+              "RelativeDocumentMoniker": "PRM392_BookSoccerYard.API\\DTO\\Slot\\SlotDTO.cs",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\M\u00E1y t\u00EDnh\\PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API\\DTO\\Slot\\SlotDTO.cs",
+              "RelativeToolTip": "PRM392_BookSoccerYard.API\\DTO\\Slot\\SlotDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T03:20:26.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CalendarDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\M\u00E1y t\u00EDnh\\PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API\\DTO\\Order\\CalendarDTO.cs",
+              "RelativeDocumentMoniker": "PRM392_BookSoccerYard.API\\DTO\\Order\\CalendarDTO.cs",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\M\u00E1y t\u00EDnh\\PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API\\DTO\\Order\\CalendarDTO.cs",
+              "RelativeToolTip": "PRM392_BookSoccerYard.API\\DTO\\Order\\CalendarDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T03:18:24.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Customer.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\M\u00E1y t\u00EDnh\\PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API\\Models\\Customer.cs",
               "RelativeDocumentMoniker": "PRM392_BookSoccerYard.API\\Models\\Customer.cs",
@@ -83,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "Payment.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\M\u00E1y t\u00EDnh\\PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API\\Models\\Payment.cs",
               "RelativeDocumentMoniker": "PRM392_BookSoccerYard.API\\Models\\Payment.cs",
@@ -91,25 +159,24 @@
               "RelativeToolTip": "PRM392_BookSoccerYard.API\\Models\\Payment.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T20:55:22.9Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-28T20:55:22.9Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "CreatedOrder.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\M\u00E1y t\u00EDnh\\PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API\\DTO\\Order\\CreatedOrder.cs",
               "RelativeDocumentMoniker": "PRM392_BookSoccerYard.API\\DTO\\Order\\CreatedOrder.cs",
               "ToolTip": "C:\\Users\\Admin\\OneDrive\\M\u00E1y t\u00EDnh\\PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API\\DTO\\Order\\CreatedOrder.cs",
               "RelativeToolTip": "PRM392_BookSoccerYard.API\\DTO\\Order\\CreatedOrder.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAzwAsAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAsAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-28T20:48:40.843Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "Mappers.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\M\u00E1y t\u00EDnh\\PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API\\Mappers.cs",
               "RelativeDocumentMoniker": "PRM392_BookSoccerYard.API\\Mappers.cs",
@@ -117,12 +184,11 @@
               "RelativeToolTip": "PRM392_BookSoccerYard.API\\Mappers.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T20:40:18.918Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-28T20:40:18.918Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "OrderDTO.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\M\u00E1y t\u00EDnh\\PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API\\DTO\\Order\\OrderDTO.cs",
               "RelativeDocumentMoniker": "PRM392_BookSoccerYard.API\\DTO\\Order\\OrderDTO.cs",
@@ -130,25 +196,24 @@
               "RelativeToolTip": "PRM392_BookSoccerYard.API\\DTO\\Order\\OrderDTO.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAxwAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T20:38:21.39Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-28T20:38:21.39Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "OrdersController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\M\u00E1y t\u00EDnh\\PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API\\Controllers\\OrdersController.cs",
               "RelativeDocumentMoniker": "PRM392_BookSoccerYard.API\\Controllers\\OrdersController.cs",
               "ToolTip": "C:\\Users\\Admin\\OneDrive\\M\u00E1y t\u00EDnh\\PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API\\Controllers\\OrdersController.cs",
               "RelativeToolTip": "PRM392_BookSoccerYard.API\\Controllers\\OrdersController.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAowGsAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAowJUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-27T20:30:41.021Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "CustomersController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\M\u00E1y t\u00EDnh\\PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API\\Controllers\\CustomersController.cs",
               "RelativeDocumentMoniker": "PRM392_BookSoccerYard.API\\Controllers\\CustomersController.cs",
@@ -156,12 +221,11 @@
               "RelativeToolTip": "PRM392_BookSoccerYard.API\\Controllers\\CustomersController.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAE8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T20:08:49.578Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T20:08:49.578Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "CustomerDTO.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\M\u00E1y t\u00EDnh\\PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API\\DTO\\Customer\\CustomerDTO.cs",
               "RelativeDocumentMoniker": "PRM392_BookSoccerYard.API\\DTO\\Customer\\CustomerDTO.cs",
@@ -174,7 +238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "Service.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\M\u00E1y t\u00EDnh\\PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API\\Models\\Service.cs",
               "RelativeDocumentMoniker": "PRM392_BookSoccerYard.API\\Models\\Service.cs",
@@ -182,12 +246,11 @@
               "RelativeToolTip": "PRM392_BookSoccerYard.API\\Models\\Service.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T20:08:34.185Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T20:08:34.185Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "Slot.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\M\u00E1y t\u00EDnh\\PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API\\Models\\Slot.cs",
               "RelativeDocumentMoniker": "PRM392_BookSoccerYard.API\\Models\\Slot.cs",
@@ -199,7 +262,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "PRM392_BookSoccerYardContext.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\M\u00E1y t\u00EDnh\\PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API\\Models\\PRM392_BookSoccerYardContext.cs",
               "RelativeDocumentMoniker": "PRM392_BookSoccerYard.API\\Models\\PRM392_BookSoccerYardContext.cs",
@@ -207,25 +270,24 @@
               "RelativeToolTip": "PRM392_BookSoccerYard.API\\Models\\PRM392_BookSoccerYardContext.cs",
               "ViewState": "AgIAAHQAAAAAAAAAAAAuwIUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T19:55:46.877Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T19:55:46.877Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\M\u00E1y t\u00EDnh\\PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API\\Models\\Order.cs",
               "RelativeDocumentMoniker": "PRM392_BookSoccerYard.API\\Models\\Order.cs",
               "ToolTip": "C:\\Users\\Admin\\OneDrive\\M\u00E1y t\u00EDnh\\PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API\\Models\\Order.cs",
               "RelativeToolTip": "PRM392_BookSoccerYard.API\\Models\\Order.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAewDQAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAASwCQAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-27T19:55:22.489Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "OrderDetail.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\M\u00E1y t\u00EDnh\\PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API\\Models\\OrderDetail.cs",
               "RelativeDocumentMoniker": "PRM392_BookSoccerYard.API\\Models\\OrderDetail.cs",
@@ -233,12 +295,11 @@
               "RelativeToolTip": "PRM392_BookSoccerYard.API\\Models\\OrderDetail.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T19:55:21.275Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T19:55:21.275Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\M\u00E1y t\u00EDnh\\PRM392_BookSoccerYard.API\\PRM392_BookSoccerYard.API\\Program.cs",
               "RelativeDocumentMoniker": "PRM392_BookSoccerYard.API\\Program.cs",

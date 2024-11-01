@@ -6,6 +6,7 @@ using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using PRM392_BookSoccerYard.API.DTO.Order;
 using PRM392_BookSoccerYard.API.DTO.Yard;
 using PRM392_BookSoccerYard.API.Models;
 
@@ -123,5 +124,51 @@ namespace PRM392_BookSoccerYard.API.Controllers
         {
             return _context.Yards.Any(e => e.Id == id);
         }
+        [HttpGet("{id}/Days/{day}")]
+        public async Task<IActionResult> GetCalendarbyYardId([FromRoute]int id, [FromRoute]DateOnly day)
+        {
+            var result = new List<Order>();
+            try
+            {
+                result = await _context.Orders
+               .Where(x => x.YardId == id && x.BookingDate.Value.Date==day.ToDateTime(TimeOnly.MinValue))
+               .Include(x => x.Customer).Include(x => x.Slot)
+               .ToListAsync();
+            }
+            catch {
+                result = null;
+            }
+            var slots = await _context.Slots.Where(x=>x.Status == true).ToListAsync();
+            var list = new List<CalendarDTO>();
+            foreach (var slot in slots) {
+                var order = result.Where(x => x.SlotId == slot.Id).FirstOrDefault();
+                if (order != null)
+                {
+                    list.Add(new CalendarDTO
+                    {
+                        SlotId = order.SlotId,
+                        OrderId = order.Id,
+                        CustomerId = order.CustomerId.HasValue ? order.CustomerId.Value : -1,
+                        CustomerName = order.Customer == null ? "guest" : order.Customer.Email,
+                        StartTime = order.Slot.StartTime,
+                        EndTime = order.Slot.EndTime,
+                        Status = "Đã được đặt"
+
+                    });
+                }
+                else {
+                    list.Add(new CalendarDTO
+                    {
+                        SlotId = slot.Id,
+                        CustomerId = -1,
+                        StartTime = slot.StartTime,
+                        EndTime = slot.EndTime,
+                        Status = "Trống"
+                    });
+                }
+            }
+            return Ok(list);
+        }
+
     }
 }
