@@ -137,7 +137,6 @@ namespace PRM392_BookSoccerYard.API.Controllers
             {
                 return NotFound();
             }
-
             _context.Orders.Remove(order);
             await _context.SaveChangesAsync();
 
@@ -147,6 +146,32 @@ namespace PRM392_BookSoccerYard.API.Controllers
         private bool OrderExists(int id)
         {
             return _context.Orders.Any(e => e.Id == id);
+        }
+        [HttpGet("dashboard/price")]
+        public async Task<IActionResult> GetDashboardPrice()
+        {
+            var list = await _context.Orders.Where(x=>x.Status==StatusOrder.DaThanhToan.ToString())
+                .GroupBy(e => e.CreateDate.Value.Date)
+                .Select(x => new DashboardDTO
+                {
+                    Day = x.Key.Date,
+                    Quantity = x.Sum(x => x.TotalPrice.Value)
+                })
+                .ToListAsync();
+            return Ok(list);
+        }
+        [HttpGet("dashboard/quantity")]
+        public async Task<IActionResult> GetDashboardQuantity()
+        {
+            var list = await _context.Orders.Where(x => x.Status == StatusOrder.DaThanhToan.ToString())
+                .GroupBy(e => e.CreateDate.Value.Date)
+                .Select(x => new DashboardDTO
+                {
+                    Day = x.Key.Date,
+                    Quantity = x.Count()
+                })
+                .ToListAsync();
+            return Ok(list);
         }
     }
 }

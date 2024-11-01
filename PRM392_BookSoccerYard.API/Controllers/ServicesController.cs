@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using PRM392_BookSoccerYard.API.DTO.Service;
 using PRM392_BookSoccerYard.API.Models;
 
 namespace PRM392_BookSoccerYard.API.Controllers
@@ -14,22 +16,26 @@ namespace PRM392_BookSoccerYard.API.Controllers
     public class ServicesController : ControllerBase
     {
         private readonly PRM392_BookSoccerYardContext _context;
+        private IMapper _mapper;
 
-        public ServicesController(PRM392_BookSoccerYardContext context)
+        public ServicesController(PRM392_BookSoccerYardContext context,IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
 
         // GET: api/Services
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Service>>> GetServices()
+        public async Task<ActionResult<IEnumerable<ServiceDTO>>> GetServices()
         {
-            return await _context.Services.ToListAsync();
+            var list = await _context.Services.ToListAsync();
+            var result = _mapper.Map<List<ServiceDTO>>(list);
+            return Ok(result);
         }
 
         // GET: api/Services/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Service>> GetService(int id)
+        public async Task<ActionResult<ServiceDTO>> GetService(int id)
         {
             var service = await _context.Services.FindAsync(id);
 
@@ -38,21 +44,19 @@ namespace PRM392_BookSoccerYard.API.Controllers
                 return NotFound();
             }
 
-            return service;
+            return _mapper.Map <ServiceDTO>(service);
         }
 
         // PUT: api/Services/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutService(int id, Service service)
+        public async Task<IActionResult> PutService(int id, UpdatedService serviceDTO)
         {
-            if (id != service.Id)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(service).State = EntityState.Modified;
-
+            var service = await _context.Services.FindAsync(id);
+            service.Name = serviceDTO.Name;
+            service.Description = serviceDTO.Description;
+            service.Price = serviceDTO.Price;
+            service.Img = serviceDTO.Img; 
             try
             {
                 await _context.SaveChangesAsync();
@@ -75,8 +79,9 @@ namespace PRM392_BookSoccerYard.API.Controllers
         // POST: api/Services
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Service>> PostService(Service service)
+        public async Task<ActionResult<Service>> PostService(CreatedService serviceDTO)
         {
+            var service = _mapper.Map<Service>(serviceDTO);
             _context.Services.Add(service);
             try
             {

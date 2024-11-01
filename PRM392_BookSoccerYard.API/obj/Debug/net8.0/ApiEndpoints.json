@@ -327,6 +327,26 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "PRM392_BookSoccerYard.API.Controllers.OrdersController",
+    "Method": "GetDashboardPrice",
+    "RelativePath": "api/Orders/dashboard/price",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PRM392_BookSoccerYard.API.Controllers.OrdersController",
+    "Method": "GetDashboardQuantity",
+    "RelativePath": "api/Orders/dashboard/quantity",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "PRM392_BookSoccerYard.API.Controllers.PaymentsController",
     "Method": "GetPayments",
     "RelativePath": "api/Payments",
@@ -445,7 +465,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[PRM392_BookSoccerYard.API.Models.Service, PRM392_BookSoccerYard.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[PRM392_BookSoccerYard.API.DTO.Service.ServiceDTO, PRM392_BookSoccerYard.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -464,8 +484,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "service",
-        "Type": "PRM392_BookSoccerYard.API.Models.Service",
+        "Name": "serviceDTO",
+        "Type": "PRM392_BookSoccerYard.API.DTO.Service.CreatedService",
         "IsRequired": true
       }
     ],
@@ -497,7 +517,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "PRM392_BookSoccerYard.API.Models.Service",
+        "Type": "PRM392_BookSoccerYard.API.DTO.Service.ServiceDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -521,8 +541,8 @@
         "IsRequired": true
       },
       {
-        "Name": "service",
-        "Type": "PRM392_BookSoccerYard.API.Models.Service",
+        "Name": "serviceDTO",
+        "Type": "PRM392_BookSoccerYard.API.DTO.Service.UpdatedService",
         "IsRequired": true
       }
     ],
