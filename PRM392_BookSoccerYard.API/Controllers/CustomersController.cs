@@ -108,6 +108,33 @@ namespace PRM392_BookSoccerYard.API.Controllers
             return CreatedAtAction("GetCustomer", new { id = customer.Id }, _mapper.Map<CustomerDTO>(customer));
         }
 
+        [HttpPost("/api/Customers/v2")]
+        public async Task<ActionResult<CustomerDTO>> PostCustomer(CustomerDTO customerDTO)
+        {
+            var customer = _mapper.Map<Customer>(customerDTO);
+            customer.CreateDate = DateTime.Now;
+            customer.UpdateDate = DateTime.Now;
+            customer.Status = true;
+            await _context.Customers.AddAsync(customer);
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateException)
+            {
+                if (CustomerExists(customer.Id))
+                {
+                    return Conflict();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return CreatedAtAction("GetCustomer", new { id = customer.Id }, _mapper.Map<CustomerDTO>(customer));
+        }
+
         // DELETE: api/Customers/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCustomer(int id)

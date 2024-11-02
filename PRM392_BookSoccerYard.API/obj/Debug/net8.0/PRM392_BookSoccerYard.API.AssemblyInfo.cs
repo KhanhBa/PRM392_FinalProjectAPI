@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PRM392_BookSoccerYard.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a801f78998be1bb3141ccf5258bf82db57e663d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2be1ca75c16ede3f82f18151470d05dfccbddf87")]
 [assembly: System.Reflection.AssemblyProductAttribute("PRM392_BookSoccerYard.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PRM392_BookSoccerYard.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
